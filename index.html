@@ -13,10 +13,10 @@
 
     <form action="" id="survey-form">
         <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="name" placeholder="Enter your name" required>
 
         <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" validate placeholder="Enter your email">
+        <input type="email" id="email" validate placeholder="Enter your email" required>
 
         <label for="number" id="number-label">Age</label>
         <input type="number" id="number" min="18" max="60" validate placeholder="Age">
@@ -28,16 +28,16 @@
           <option value="others">Others</option>
         </select>
         <label></label>
-        <input type="radio" name="name">
-        <input type="radio" name="name">
-        <input type="radio" name="name">
+        <input type="radio" name="name" value="definitely">
+        <input type="radio" name="name" value="not sure">
+        <input type="radio" name="name" value="maybe">
 
         <input type="checkbox" value="Backend project">
         <input type="checkbox" value="Front project">
         <input type="checkbox" value="Fullstack project">
         <textarea></textarea>
-        <input type="submit" value="submit form">
-        
+        <input type="submit" id="submit" value="submit form">
+
     </form>
 
 
