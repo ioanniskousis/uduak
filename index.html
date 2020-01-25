@@ -12,10 +12,21 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form action="" id="survey-form">
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        <input type="email" id="email" validate>
-        <input type="number" id="number" validate>
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" validate placeholder="Enter your email">
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="18" max="60" validate placeholder="Age">
+
+        <select name="role" id="dropdown">
+          <option value="student">Student</option>
+          <option value="fulltime">Full Time Job</option>
+          <option value="parttime">Part Time Job</option>
+          <option value="others">Others</option>
+        </select>
 
     </form>
 
